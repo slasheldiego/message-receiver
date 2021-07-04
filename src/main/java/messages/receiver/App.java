@@ -26,11 +26,6 @@ import messages.receiver.interfaces.IKafkaConstants;
 
 public class App {
 
-    private static final String EH_NAMESPACE_CONNECTION_STRING = "Endpoint=sb://beleventhubscope.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=2vWIt/DWSit0pyqCN23dK9ua/TJszYl9/XCQKcZfXXQ=";
-    private static final String eventHubName = "beleventhub01";
-    private static final String STORAGE_CONNECTION_STRING = "DefaultEndpointsProtocol=https;AccountName=externaladls;AccountKey=ex3Aub4/ASCifVpcxGGl+rWFYLxLgImWkOxOUPEIC6XAxstRpYnVVNFFMhtGkVAMbcJwHK1HwImaZlTL2zU8jQ==;EndpointSuffix=core.windows.net";
-    private static final String STORAGE_CONTAINER_NAME = "stream";
-
     /*public static final Consumer<EventContext> PARTITION_PROCESSOR = eventContext -> {
         System.out.printf("Processing event from partition %s with sequence number %d with body: %s %n",
                 eventContext.getPartitionContext().getPartitionId(), eventContext.getEventData().getSequenceNumber(),
