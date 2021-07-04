@@ -83,8 +83,9 @@ public class App {
         System.out.println("Event processor stopped.");
 
         System.out.println("Exiting process");*/
-        //runConsumer();
-        int i = 1;
+        System.out.println("Empieza Receiver");
+        runConsumer();
+        /*int i = 1;
         while (true){
             try{
                 FileWriter write = new FileWriter("test.txt", true);
@@ -98,7 +99,7 @@ public class App {
             } catch(IOException e){
                 System.out.println(e);
             }
-        }
+        }*/
     }
 
     static void runConsumer() {
